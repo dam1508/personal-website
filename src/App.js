@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header';
+import Paragraph from './components/Paragraph';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Damian Piotrowski</h1>
-      </header>
+    <div>
+      <Header headerText="Hi, I'm Damian" />
+      <Paragraph pClass="about-paragraph"/>
     </div>
   );
 }
