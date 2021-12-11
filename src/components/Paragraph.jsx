@@ -2,8 +2,9 @@ import React from 'react';
 
 function Paragraph(props) {
     return (<div className={props.pClass}>
+        <h2>{props.title}</h2>
         <p >
-            I'm computer science student and aspiring front end developer.
+           {props.content}
         </p>
         </div>
     );

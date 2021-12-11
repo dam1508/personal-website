@@ -8,35 +8,126 @@ body {
     sans-serif;
 }
 
+h1 {
+  font-size: 6rem;
+  text-align: center;
+
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+
+}
+h3 {
+  font-size: 2rem;
+
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 
 /****************************** CLASSES *******************************/
 
 .App-header {
-  font-size: calc(10px + 2vmin);
   margin-top: 5vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  color: #14FFEC;
+  align-items: center;
 }
 
 .App-header h1 {
-  margin-left: 15vw;
-  text-align: center;
+  color: #14FFEC;
 }
 
 .App-header img{
-  height: 20vh;
+  height: 30vh;
+  width: 30vh;
   border-radius: 50%;
   border: solid #14FFEC 5px ;
+  margin-bottom: 10vh;
 }
 
 .about-paragraph{
   min-height: 20vh;
-  background-color: #323232;
+  margin-bottom: 0;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #0D7377;
+}
+
+.about-paragraph h2 {
+  margin-top: 0;
   color: #cdfffb;
 }
 
 .about-paragraph p {
+  margin: 0;
   text-align: center;
+  color: white;
+}
+
+.skills {
+  margin: 0;
+  min-height: 20vh;
+  color: white;
+  background-color: #199296;
+}
+
+.skills h2 {
+  padding-top: 5vh;
+  margin-top: 0;
+  color: #a1fff7;
+}
+
+.programming {
+  width: 60%;
+  margin: 5vh auto 0;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.programming img{
+  height: 200px;
+  margin-right: 5%;
+  float: left;
+}
+
+.programming div {
+  text-align: center;
+}
+
+.programming h3 {
+  margin: 1vh;
+}
+
+.gamedev {
+  width: 60%;
+  margin: 5vh auto 0;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gamedev img{
+  order: 2;
+  height: 200px;
+  margin-left: 5%;
+  float: right;
+}
+
+.gamedev div {
+  text-align: center;
+}
+
+.gamedev h3 {
+  margin: 1vh;
 }
