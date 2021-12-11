@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Attributes from './Attributes';
 
 function Footer(){

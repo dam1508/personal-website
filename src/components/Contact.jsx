@@ -10,16 +10,16 @@ function Contact(){
         <p >{contact.content}</p>
         <div>
         
-            <a href="https://github.com/dam1508" target="_blank">
+            <a href="https://github.com/dam1508" rel='noreferrer' target="_blank">
                 <img src={git} alt='git icon' />
             </a>
-            <a href='https://www.linkedin.com/in/damian-piotrowski-a48731228/#' target="_blank">
+            <a href='https://www.linkedin.com/in/damian-piotrowski-a48731228/#' rel='noreferrer' target="_blank">
                 <img src={linkedin} alt='linkedin icon'/>
             </a>
         </div>
         <p>{contact.mail}</p>
         <div>
-            <a class="mail" href="mailto:damianp.150898@gmail.com" target='_blank'>Message</a>
+            <a class="mail" href="mailto:damianp.150898@gmail.com" rel='noreferrer' target='_blank'>Message</a>
         </div>
      </div>
  )
