@@ -54,7 +54,10 @@ p {
   color: white;
 }
 
+/****************************** HEADER *******************************/
+
 .app-header {
+  max-height: 100vh;
   display: flex;
   margin-top: 5vh;
   padding: 10vh 0;
@@ -75,6 +78,8 @@ p {
   border: solid #14FFEC 5px ;
 }
 
+/****************************** INFO *******************************/
+
 .info {
   margin: 10vh 0;
 }
@@ -84,14 +89,15 @@ p {
   font-size: 2em;
   color: #575757;
   text-align: center;
+  cursor: default;
 }
 
 .about-paragraph{
   min-height: 20vh;
-  margin-bottom: 0;
+  margin: 0 auto;
+  width: 60%;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #323232;
 }
 
 .about-paragraph h2 {
@@ -165,4 +171,72 @@ p {
 
 .gamedev h3 {
   margin: 1vh;
+}
+
+/****************************** CONTACT *******************************/
+
+.contact {
+  min-height: 20vh;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.contact p {
+  margin: 0;
+  text-align: center;
+  color: white;
+
+}
+
+.contact div {
+  display: flex;
+  justify-content: center;
+}
+
+.contact img {
+  height: 50px;
+  margin: 2vh 2vw;
+}
+
+.mail {
+  background-color: #212121;
+  margin: 4vh auto 0;
+  padding: 0.5em 1em;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  border: solid #14FFEC 5px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+/****************************** FOOTER *******************************/
+
+.footer {
+  margin-bottom: 0;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1vh;
+  background-color: #212121;
+  color: #5a5a5a;
+}
+
+.footer h4{
+  margin: 1vh auto 0;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 1vh;
+}
+.footer span {
+  color: #2eb3a7;
 }
