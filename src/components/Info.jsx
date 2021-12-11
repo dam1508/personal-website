@@ -1,15 +1,18 @@
 import React from 'react';
+import {Element} from 'react-scroll';
 import Paragraph from './Paragraph';
 import Skills from './Skills';
+import Contact  from './Contact';
 import Myhr from './Myhr';
 
 function Info() {
     return (
         <div className='info'>
-            <Paragraph pClass="about-paragraph" />
+            <Element name='about'><Paragraph pClass="about-paragraph" /></Element>
             <Myhr />
-            <Skills />
+            <Element name='skills'><Skills /></Element>
             <Myhr />
+            <Element name='contact'><Contact /></Element>
         </div>
     );
 }

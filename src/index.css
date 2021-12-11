@@ -35,8 +35,28 @@ p {
 
 /****************************** CLASSES *******************************/
 
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #0D7377;
+  min-height: 5vh;
+  width: 100vw;
+}
+
+.navbar p {
+  margin: auto 4rem;
+  cursor: pointer;
+  color: white;
+}
+
 .app-header {
   display: flex;
+  margin-top: 5vh;
   padding: 10vh 0;
   flex-direction: column;
   justify-content: center;

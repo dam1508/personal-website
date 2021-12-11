@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Info from './components/Info';
+import Navbar from './components/Navbar';
+import { Element } from 'react-scroll';
 import './fonts/fonts.css';
 
 function App() {
@@ -9,7 +11,8 @@ function App() {
   
   return (
     <div>
-      <Header />
+      <Navbar />
+      <Element name='home'><Header /></Element>
       <Info />
     </div>
   );
