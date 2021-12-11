@@ -1,10 +1,11 @@
 import React from 'react';
+import about from '../data/about';
 
 function Paragraph(props) {
     return (<div className={props.pClass}>
-        <h2>{props.title}</h2>
+        <h2>{about.title}</h2>
         <p >
-           {props.content}
+           {about.content}
         </p>
         </div>
     );
