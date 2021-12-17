@@ -1,7 +1,22 @@
+:root {
+  --background: #323232;
+  --accent-background: #212121;
+  --footer-text: #5a5a5a;
+  --divider-color: #575757;
+  --switch-color: #3b3b3b;
+  --contrast-color: #14FFEC;
+  --accent-color: #5cfff1;
+  --weak-accent-color: #b9fff9;
+  --text-color: white;
+  --navbar-color: #0D7377;
+  --footer-highlight: #2eb3a7;
+}
+
+
 /****************************** DEFAULTS *******************************/
 
 body {
-  background-color: #323232;
+  background-color: var(--background);
   margin: 0;
   font-family: 'Jost', sans-serif;
 }
@@ -10,7 +25,7 @@ h1 {
   font-size: 6rem;
   text-align: center;
   font-family: 'Exo', sans-serif;
-  color: #14FFEC;
+  color: var(--contrast-color);
 
 }
 
@@ -18,13 +33,13 @@ h2 {
   font-size: 3.5rem;
   text-align: center;
   font-family: 'Exo', sans-serif;
-  color: #5cfff1;
+  color: var(--accent-color);
 
 }
 h3 {
   font-size: 2rem;
   font-family: 'Exo', sans-serif;
-  color: #b9fff9;
+  color: var(--weak-accent-color);
 
 }
 
@@ -43,7 +58,7 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #0D7377;
+  background-color: var(--navbar-color);
   min-height: 5vh;
   width: 100vw;
 }
@@ -51,8 +66,27 @@ p {
 .navbar p {
   margin: auto 4rem;
   cursor: pointer;
-  color: white;
+  color: var(--text-color);
 }
+
+.switch {
+  background-color: var(--switch-color);
+  position: absolute;
+  right: clamp(20px, 5vw, 50px);
+  width: 3em;
+  height: 1.5em;
+  border-radius: 0.75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+
 
 /****************************** HEADER *******************************/
 
@@ -64,7 +98,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #212121;
+  background-color: var(--accent-background);
 }
 
 .app-header h1 {
@@ -75,7 +109,7 @@ p {
   height: 30vh;
   width: 30vh;
   border-radius: 50%;
-  border: solid #14FFEC 5px ;
+  border: solid var(--contrast-color) 5px ;
 }
 
 /****************************** INFO *******************************/
@@ -87,14 +121,14 @@ p {
 .my-hr {
   font-family: 'Caveat', cursive;
   font-size: 2em;
-  color: #575757;
+  color: var(--divider-color);
   text-align: center;
   cursor: default;
 }
 
 .about-paragraph{
   min-height: 20vh;
-  margin: 0 auto;
+  margin: 0 auto 10vh;
   width: 60%;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -107,14 +141,14 @@ p {
 .about-paragraph p {
   margin: 0;
   text-align: center;
-  color: white;
+  color: var(--text-color);
 }
 
 .skills {
   margin: 0;
   min-height: 20vh;
-  color: white;
-  background-color: #323232;
+  color: var(--text-color);
+  background-color: var(--background);
   line-height: 2;
 }
 
@@ -186,7 +220,7 @@ p {
 .contact p {
   margin: 0;
   text-align: center;
-  color: white;
+  color: var(--text-color);
 
 }
 
@@ -201,15 +235,15 @@ p {
 }
 
 .mail {
-  background-color: #212121;
+  background-color: var(--accent-background);
   margin: 4vh auto 0;
   padding: 0.5em 1em;
   width: 8em;
   display: flex;
   justify-content: center;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
-  border: solid #14FFEC 5px;
+  border: solid var(--contrast-color) 5px;
   border-radius: 10px;
   font-size: 1.2em;
 }
@@ -224,8 +258,8 @@ p {
   justify-content: center;
   align-items: center;
   padding-bottom: 1vh;
-  background-color: #212121;
-  color: #5a5a5a;
+  background-color: var(--accent-background);
+  color: var(--footer-text);
 }
 
 .footer h4{
@@ -238,5 +272,5 @@ p {
   margin-top: 1vh;
 }
 .footer span {
-  color: #2eb3a7;
+  color: var(--footer-highlight);
 }

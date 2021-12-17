@@ -8,7 +8,7 @@ import Myhr from './Myhr';
 function Info() {
     return (
         <div className='info'>
-            <Element name='about'><Paragraph pClass="about-paragraph" /></Element>
+            <Element name='about'><Paragraph /></Element>
             <Myhr />
             <Element name='skills'><Skills /></Element>
             <Myhr />

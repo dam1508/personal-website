@@ -3,7 +3,7 @@ import about from '../data/about';
 
 function Paragraph(props) {
     return (
-        <div className={props.pClass}>
+        <div className='about-paragraph'>
             <h2>{about.title}</h2>
             <p >
                 {about.content}
